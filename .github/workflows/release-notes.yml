@@ -24,6 +24,8 @@ jobs:
 
       - name: Commit e push das Release Notes
         run: |
+          git config --local user.name "krolcm"
+          git config --local user.email "krolcm22@gmail.com"
           git add CHANGELOG.md
           git commit -m "chore(release): Generate Release Notes"
           git push origin main
