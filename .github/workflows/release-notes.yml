@@ -15,12 +15,12 @@ jobs:
 
       - name: Instalar dependências
         run: npm install
-        
-      - name: Tornar standard-version executável
-        run: chmod +x node_modules/.bin/standard-version
 
       - name: Gerar Release Notes
         run: npm run release
+        
+      - name: Tornar standard-version executável
+        run: chmod +x node_modules/.bin/standard-version
 
       - name: Commit e push das Release Notes
         run: |
