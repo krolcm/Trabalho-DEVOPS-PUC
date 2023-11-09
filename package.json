@@ -1,5 +1,9 @@
 {
   "devDependencies": {
-    "cypress": "^13.4.0"
+    "cypress": "^13.4.0",
+    "standard-version": "^9.5.0"
+  },
+  "scripts": {
+    "release": "standard-version"
   }
 }
