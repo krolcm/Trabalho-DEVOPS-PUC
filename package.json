@@ -3,7 +3,7 @@
     "cypress": "^13.4.0",
     "standard-version": "^9.5.0"
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "scripts": {
     "release": "standard-version"
   }
