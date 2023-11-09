@@ -27,14 +27,8 @@ jobs:
       - name: Gerar Release Notes
         run: npm run release 
 
-      - name: Verificar alterações
-        id: check_changes
-        run: |
-          git diff --exit-code || echo "Changes detected"
-          git diff --cached --exit-code || echo "Staged changes detected"
-
       - name: Commit e push das Release Notes
-        if: steps.check_changes.outputs.check_changes == 'Changes detected' || steps.check_changes.outputs.check_changes == 'Staged changes detected'
+      
         run: |
           git add CHANGELOG.md
           git commit -m "chore(release): Generate Release Notes"
