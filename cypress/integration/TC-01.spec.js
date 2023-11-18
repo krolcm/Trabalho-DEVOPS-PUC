@@ -1,8 +1,8 @@
 describe('Acessar o Google', () => {
-    it('Deve abrir a página do Google', () => {
+    it('Deve abrir a página da Amazon', () => {
       // Visitar a página do Google
-      cy.visit('https://google.com')
-      cy.get('#APjFqb').type('Devops')
-      cy.get('#APjFqb').type('{enter}')
+      cy.visit('https://amazon.com.br/');
+      cy.get('.SDkEP').type('Devops');
+      cy.get('.FPdoLc > center > .gNO89b').click();
     })
   })
