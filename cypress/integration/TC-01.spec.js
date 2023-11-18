@@ -1,4 +1,4 @@
-describe('Acessar o Google', () => {
+describe('Acessar a Amazon', () => {
     it('Deve abrir a página da Amazon', () => {
       // Visitar a página do Google
       cy.visit('https://amazon.com.br/');
