@@ -5,21 +5,12 @@ All notable changes to this project will be documented in this file. See [standa
 ## [1.2.0](https://github.com/krolcm/Automa_Seminario/compare/v1.1.1...v1.2.0) (2023-11-18)
 
 
-### Features
-
-* nova funcionalidade para o código ([1602c3b](https://github.com/krolcm/Automa_Seminario/commit/1602c3bf392bef98e31bafe02a7bd1763fb13cb7))
-
-
 ### Bug Fixes
 
 * alteraçao no yml de release notes ([5c39c64](https://github.com/krolcm/Automa_Seminario/commit/5c39c6435afdc6791837f0e810562d697754cf17))
 * correção de arquitetura de pastas com gitignore ([8776aa0](https://github.com/krolcm/Automa_Seminario/commit/8776aa02a9d8c6f5e79ae331dbd27fa22ed35140))
 * correção de arquitetura de pastas com gitignore voltando pastas ([7334db7](https://github.com/krolcm/Automa_Seminario/commit/7334db7a7d43034bca2074f7f6d28b0cf7a28118))
 * Correção de arquivos e alteração de ambiente para a Amazon ([6b1545a](https://github.com/krolcm/Automa_Seminario/commit/6b1545a03f2cd7ccea39f769fa344d4fcbf2afbb))
-
-### [1.1.1](https://github.com/krolcm/Automa_Seminario/compare/v1.1.0...v1.1.1) (2023-11-09)
-
-## 1.1.0 (2023-11-09)
 
 
 ### Features
