@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/krolcm/Automa_Seminario/compare/v1.2.0...v1.2.1) (2023-11-18)
+
+
+### Features
+
+* nova feature implementada no controle de release notes ([e92805a](https://github.com/krolcm/Automa_Seminario/commit/e92805ae6e6ad0a793caf6b974c65c0d110d47ef))
+
 ## [1.2.0](https://github.com/krolcm/Automa_Seminario/compare/v1.1.1...v1.2.0) (2023-11-18)
 
 
@@ -16,4 +23,3 @@ All notable changes to this project will be documented in this file. See [standa
 ### Features
 
 * alterações feitas no código para teste de commit feat e execução do release notes ([e7d7fac](https://github.com/krolcm/Automa_Seminario/commit/e7d7faceaaaaa4b144b700149e5ee6abea73b04f))
-

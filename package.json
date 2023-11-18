@@ -3,7 +3,7 @@
     "cypress": "^13.5.0",
     "standard-version": "^9.5.0"
   },
-  "version": "1.2.0",
+  "version": "1.2.1",
   "scripts": {
     "cypress:run": "cypress run --headless"
   }
