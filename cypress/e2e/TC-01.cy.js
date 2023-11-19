@@ -4,5 +4,6 @@ describe('Acessar a Amazon', () => {
       cy.visit('https://amazon.com.br/');
       cy.get('#twotabsearchtextbox').type('Devops');
       cy.get('#nav-search-submit-button').click();
+      
     })
   })
