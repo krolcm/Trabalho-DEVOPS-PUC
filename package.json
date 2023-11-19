@@ -4,5 +4,9 @@
   },
   "scripts": {
     "cypress:run": "cypress run"
+  },
+
+  "scripts": {
+    "release": "standard-version"
   }
 }
