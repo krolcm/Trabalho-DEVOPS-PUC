@@ -7,5 +7,5 @@
     "cypress:run": "cypress run",
     "release": "standard-version"
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }

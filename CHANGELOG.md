@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/krolcm/seminario-devops-grupo-03/compare/v1.0.3...v1.0.4) (2023-11-19)
+
+
+### Features
+
+* Alteração no codigo para nova funcionalidade ([bc23cc6](https://github.com/krolcm/seminario-devops-grupo-03/commit/bc23cc627550a545f98f59e6d82f83a74c27757f))
+
 ### [1.0.3](https://github.com/krolcm/seminario-devops-grupo-03/compare/v1.0.2...v1.0.3) (2023-11-19)
 
 ### [1.0.2](https://github.com/krolcm/seminario-devops-grupo-03/compare/v1.0.1...v1.0.2) (2023-11-19)
