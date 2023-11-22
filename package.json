@@ -1,11 +1,12 @@
 {
   "dependencies": {
     "cypress": "^13.5.1",
-    "minimatch": "^3.0.4"
+    "minimatch": "^3.0.4",
+    "run": "^1.4.0"
   },
   "scripts": {
     "cypress:run": "cypress run",
     "release": "standard-version"
   },
-  "version": "1.0.4"
+  "version": "1.0.5"
 }

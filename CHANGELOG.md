@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/krolcm/seminario-devops-grupo-03/compare/v1.0.4...v1.0.5) (2023-11-22)
+
+
+### Features
+
+* Nova funcionalidade de wait para aguardar carregando da pagina ([778c0c7](https://github.com/krolcm/seminario-devops-grupo-03/commit/778c0c78169fc8def8e97f085406c162aa23d482))
+
+
+### Bug Fixes
+
+* Alteração de codigo ([2e039b5](https://github.com/krolcm/seminario-devops-grupo-03/commit/2e039b582e3a0aa2762b62d0213db07f2d399611))
+* Alterar configuração do gitignore ([2ce906c](https://github.com/krolcm/seminario-devops-grupo-03/commit/2ce906c654fca8afdea6bd0b83947a8dcb1e437d))
+* corrigindo dependencias ([1628ed5](https://github.com/krolcm/seminario-devops-grupo-03/commit/1628ed51c1c099df3cc7a8ad7ba709fea831a891))
+* Corrigindo problemas de dependencias ([084f095](https://github.com/krolcm/seminario-devops-grupo-03/commit/084f0956d5d8f6a5b6882411971231a519125569))
+* Remover node_modules do rastreamento do Git ([5532dde](https://github.com/krolcm/seminario-devops-grupo-03/commit/5532dde0eab8d3e274310d0d22796957ee25a546))
+* Revertendo alterações ([89df099](https://github.com/krolcm/seminario-devops-grupo-03/commit/89df099f39609cb5a9fbdae7bf0f0df414ce1cf3))
+
 ### [1.0.4](https://github.com/krolcm/seminario-devops-grupo-03/compare/v1.0.3...v1.0.4) (2023-11-19)
 
 
