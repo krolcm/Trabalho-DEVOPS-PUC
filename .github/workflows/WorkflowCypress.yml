@@ -21,5 +21,11 @@ jobs:
     - name: Instalar dependências
       run: npm install
 
-    - name: Executar testes Cypress
-      run: npm run cypress:run
+    - name: Executar testes Cypress com Gravação
+      run: npm run cypress:run -- --record 
+
+      env: 
+        CYPRESS_RECORD_KEY: $ {{ secrets.CYPRESS_RECORD_KEY }}
+        GITHUB_TOKEN: $ {{ secrets.GITHUB_TOKEN }}
+
+
