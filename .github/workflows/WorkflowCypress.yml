@@ -23,7 +23,7 @@ jobs:
 
     - name: Executar testes Cypress com Gravação
       env: 
-        CYPRESS_RECORD_KEY: $ {{ secrets.CYPRESS_RECORD_KEY }}
-        GITHUB_TOKEN: $ {{ secrets.GITHUB_TOKEN }}
-      run: npm run cypress:run --record 
+        CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: npm run cypress:run -- --record 
 
