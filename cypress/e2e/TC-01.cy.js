@@ -7,7 +7,6 @@ describe('Acessar a Amazon', () => {
       cy.get('#twotabsearchtextbox').type('Devops');
       // Clicar no botão de pesquisa
       cy.get('#nav-search-submit-button').click();
-      // Aguardar resultados da pesquisa
       cy.wait(2000); // Tempo de espera (ajuste conforme necessário)
       // Clicar no link "Manual de DevOps"
       cy.contains('Manual de DevOps').click(); 
