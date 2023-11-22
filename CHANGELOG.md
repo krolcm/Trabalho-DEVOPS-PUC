@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.6](https://github.com/krolcm/seminario-devops-grupo-03/compare/v1.0.5...v1.0.6) (2023-11-22)
+
+
+### Features
+
+* funcionalidade para adicionar ao carrinho de compras ([59e1cea](https://github.com/krolcm/seminario-devops-grupo-03/commit/59e1cea62d1c309c04e1b5d577a7c0c40dfb16ec))
+* Nova funcionalidade para acessar o site ([f56233b](https://github.com/krolcm/seminario-devops-grupo-03/commit/f56233b4431149b00afc9082eda76d4d3041f50b))
+
 ### [1.0.5](https://github.com/krolcm/seminario-devops-grupo-03/compare/v1.0.4...v1.0.5) (2023-11-22)
 
 
