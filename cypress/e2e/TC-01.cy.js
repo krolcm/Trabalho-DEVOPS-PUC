@@ -11,5 +11,8 @@ describe('Acessar a Amazon', () => {
       cy.contains('Manual de DevOps').click(); 
       // Adicionar livro ao carrinho 
       cy.get('#add-to-cart-button').click();
+      // Verificar se a mensagem "Adicionado ao carrinho" está presente
+      cy.get('.a-size-medium-plus')
+        .should('contain.text', 'Adicionado ao carrinho');
     })
   })
