@@ -1,6 +1,5 @@
 describe('Acessar a Amazon', () => {
     it('Deve abrir a página da Amazon, pesquisar por "Devops" e acessar o link "Manual de DevOps"', () => {
-      // Visitar a página da Amazon
       cy.visit('https://amazon.com.br/');
       cy.wait(5000);
       // Digitar "Devops" na caixa de pesquisa
