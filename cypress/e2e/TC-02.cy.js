@@ -9,7 +9,7 @@ describe('Acessar a Amazon', () => {
       // Aguardar resultados da pesquisa
       cy.wait(2000); // Tempo de espera (ajuste conforme necessário)
       // Clicar no link "Manual de DevOps"
-      cy.contains('Manual de DevOps') // Seletor para encontrar o texto no link
-        .click(); // Clica no link
+      cy.contains('Manual de DevOps').click(); 
+      cy.get('#add-to-cart-button').click();
     })
   })
