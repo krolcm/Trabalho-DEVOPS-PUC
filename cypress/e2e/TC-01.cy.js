@@ -3,8 +3,6 @@ describe('Acessar a Amazon', () => {
       // Visitar a página do Google
       cy.visit('https://amazon.com.br/');
       cy.wait(5000);
-      cy.get('#twotabsearchtextbox').type('Devops');
-      cy.get('#nav-search-submit-button').click(); 
 
     })
   })
