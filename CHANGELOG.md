@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.7](https://github.com/krolcm/seminario-devops-grupo-03/compare/v1.0.6...v1.0.7) (2023-11-23)
+
+
+### Features
+
+* adicionando cypress.json ([c53c8b3](https://github.com/krolcm/seminario-devops-grupo-03/commit/c53c8b3b092364f92c62a7c7f85df02cffca8348))
+* adicionando gravação e sincronização com o cypress dashboard ([2e4b702](https://github.com/krolcm/seminario-devops-grupo-03/commit/2e4b702fb6c4444f8fefe53188fd0a258616728b))
+* nova funcionalidade de validação da msg do carrinho ([6622e74](https://github.com/krolcm/seminario-devops-grupo-03/commit/6622e7496c70d6eaa3d6e9ad55aa169e95b9eaee))
+
+
+### Bug Fixes
+
+* Ajustando o TC-01 ([590f883](https://github.com/krolcm/seminario-devops-grupo-03/commit/590f8838e36bc787c7c7ad0b004d08e63015120e))
+* ajuste de codigo ([6784279](https://github.com/krolcm/seminario-devops-grupo-03/commit/6784279ba00d90df5af1292073091becb9666fad))
+
 ### [1.0.6](https://github.com/krolcm/seminario-devops-grupo-03/compare/v1.0.5...v1.0.6) (2023-11-22)
 
 
