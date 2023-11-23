@@ -8,7 +8,7 @@
     "cypress:run": "cypress run",
     "release": "standard-version"
   },
-  "version": "1.0.7",
+  "version": "1.0.8",
   "devDependencies": {
     "standard-version": "^9.5.0"
   }
