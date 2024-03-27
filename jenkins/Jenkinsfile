@@ -27,7 +27,7 @@ pipeline {
     post {
         always {
             // Publicar o relatório de testes como um artefato de build no Jenkins
-            junit '**/cypress/results/*.xml'
+            junit '**/devops/cypress/results/*.xml'
         }
     }
 }
