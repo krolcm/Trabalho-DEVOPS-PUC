@@ -33,6 +33,11 @@ pipeline {
                 bat './node_modules/.bin/cypress run --reporter-options configFile=package.json'
             }
         }
+        stage('Input Stage') {
+            steps {
+                input(message: 'Por favor, confirme se deseja continuar para a etapa paralela')
+            }
+        }
         parallel {
             // Definir etapas paralelas
             stage('Parallel Stage 1') {
