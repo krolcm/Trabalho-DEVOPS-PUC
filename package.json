@@ -17,17 +17,15 @@
     "mochawesome-report-generator": "^6.2.0",
     "standard-version": "^9.5.0"
   },
-    "reporter": "cypress-multi-reporters",
-    "reporterOptions": {
-      "reporterEnabled": "mochawesome",
-      "mochawesomeReporterOptions": {
-        "reportDir": "cypress/results", 
-        "quiet": true,
-        "overwrite": false,
-        "html": false,
-        "json": true
-      }
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/results", 
+      "quiet": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
   }
-  
 }
-
