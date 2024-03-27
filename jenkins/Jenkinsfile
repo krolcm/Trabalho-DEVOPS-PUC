@@ -12,14 +12,14 @@ pipeline {
         stage('Instalar Dependências') {
             steps {
                 // Instalar as dependências do projeto
-                sh 'npm install'
+                bat 'npm install'
             }
         }
         
         stage('Executar Testes') {
             steps {
                 // Executar os testes Cypress em primeiro plano
-                sh './node_modules/.bin/cypress run'
+                bat './node_modules/.bin/cypress run'
             }
         }
     }
