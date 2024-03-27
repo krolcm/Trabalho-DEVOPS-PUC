@@ -25,9 +25,12 @@ pipeline {
     }
     
     post {
-        always {
-        // Arquivar os relatórios gerados pelo Cypress
-        archiveArtifacts: './mochawesome-report/*.json'
+      success {
+            echo 'pipeline bem-sucedido.'
+        }
+        
+        failure {
+            echo 'pipeline falhou.'
         }
     }
 }
