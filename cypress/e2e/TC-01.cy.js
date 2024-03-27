@@ -1,12 +1,11 @@
 describe('Acessar a Amazon', () => {
-<<<<<<< HEAD
+
   it('Deve abrir a página da Amazon e digitar a pesquisa', () => {
     cy.visit('https://amazon.com.br/');
     cy.get('#twotabsearchtextbox').type('Devops');
     cy.get('#nav-search-submit-button').click();
   })
 })
-=======
     it('Deve abrir a página da Amazon, pesquisar por "Devops" e acessar o link "Manual de DevOps"', () => {
       cy.visit('https://amazon.com.br/');
       cy.wait(5000);
@@ -23,5 +22,5 @@ describe('Acessar a Amazon', () => {
       cy.get('.a-size-medium-plus')
         .should('contain.text', 'Adicionado ao carrinho');
     })
-  })
->>>>>>> origin/main
+
+
