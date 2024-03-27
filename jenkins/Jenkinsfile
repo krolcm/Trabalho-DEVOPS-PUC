@@ -3,13 +3,12 @@ pipeline {
     
     environment {
         // Definir variáveis de ambiente
-        MY_VARIABLE = 'valor_qualquer'
+        MY_VARIABLE = 'var'
     }
     
     options {
-        // Definir opções globais do pipeline
-        timeout(time: 1, unit: 'HOURS')
-        buildDiscarder(logRotator(numToKeepStr: '10'))
+        timeout(time: 1, unit: 'HOURS') //define tempo de timeout
+        buildDiscarder(logRotator(numToKeepStr: '10')) // mantém um número máximo de builds (neste caso, 10) e descarta os mais antigos quando esse limite é atingido.
     }
     
     parameters {
