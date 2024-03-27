@@ -1,28 +1,38 @@
 pipeline {
     agent any
-
+    
     environment {
-        MY_VARIABLE = 'var'
+        // Definir variáveis de ambiente
+        MY_VARIABLE = 'valor_qualquer'
     }
+    
     options {
-        skipDefaultCheckout() // Ignorar o checkout padrão
+        // Definir opções globais do pipeline
+        timeout(time: 1, unit: 'HOURS')
+        buildDiscarder(logRotator(numToKeepStr: '10'))
     }
-     parameters {
-        string(name: 'param', defaultValue: 'default_value', description: 'Parâmetro')
+    
+    parameters {
+        // Definir parâmetros para o pipeline
+        string(name: 'PARAMETER_NAME', defaultValue: 'valor_padrao', description: 'Descrição do parâmetro')
     }
+    
     triggers {
-        cron('H */4 * * 1-5') // Executar a cada 4 horas de segunda a sexta-feira
+        // Definir o gatilho para iniciar o pipeline
+        cron('H */4 * * 1-5')
     }
     
     stages {
         stage('Clonar Repositório') {
             steps {
+                // Clonar o repositório do GitHub
                 git 'https://github.com/krolcm/Trabalho-DEVOPS-PUC.git'
             }
         }
         
         stage('Instalar Dependências') {
             steps {
+                // Instalar as dependências do projeto
                 bat 'npm install'
             }
         }
@@ -33,11 +43,14 @@ pipeline {
                 bat './node_modules/.bin/cypress run --reporter-options configFile=package.json'
             }
         }
+        
         stage('Input Stage') {
             steps {
-                input(message: 'Por favor, confirme se deseja continuar para a etapa paralela')
+                // Aguardar entrada do usuário
+                input(message: 'Por favor, confirme se deseja continuar')
             }
         }
+        
         stage('Parallel Stages') {
             parallel {
                 stage('Parallel Stage 1') {
@@ -54,6 +67,26 @@ pipeline {
                 }
             }
         }
+        
+        stage('Matrix Stage') {
+            matrix {
+                axes {
+                    axis {
+                        name 'AXIS_NAME'
+                        values 'VALUE_1', 'VALUE_2'
+                    }
+                }
+                stages {
+                    stage('Matrix Stage') {
+                        steps {
+                            // Passos para a etapa da matriz
+                            echo "Executando etapa da matriz com ${AXIS_NAME}"
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     post {
       success {
