@@ -19,7 +19,7 @@ pipeline {
         stage('Executar Testes') {
             steps {
                 // Executar os testes Cypress em primeiro plano
-                bat './node_modules/.bin/cypress run --reporter-options configFile=cypress.json'
+                bat './node_modules/.bin/cypress run --reporter-options configFile=package.json'
             }
         }
     }
