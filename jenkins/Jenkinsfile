@@ -27,7 +27,7 @@ pipeline {
     post {
         always {
         // Arquivar os relatórios gerados pelo Cypress
-        archiveArtifacts '/mochawesome-report/*.json'
+        archiveArtifacts 'devops/mochawesome-report/*.json'
         }
     }
 }
