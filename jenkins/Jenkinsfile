@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Clonar Repositório') {
+            steps {
+                // Clonar o repositório do GitHub
+                git 'https://github.com/krolcm/Trabalho-DEVOPS-PUC.git'
+            }
+        }
+        
+        stage('Instalar Dependências') {
+            steps {
+                // Instalar as dependências do projeto
+                sh 'npm install'
+            }
+        }
+        
+        stage('Executar Testes') {
+            steps {
+                // Executar os testes Cypress
+                sh './node_modules/.bin/cypress run'
+            }
+        }
+    }
+    
+    post {
+        always {
+            // Publicar o relatório de testes como um artefato de build no Jenkins
+            junit '**/cypress/results/*.xml'
+        }
+    }
+}
