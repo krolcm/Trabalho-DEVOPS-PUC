@@ -88,12 +88,22 @@ pipeline {
     }
     
     post {
-      success {
+        success {
             echo 'pipeline bem-sucedido.'
         }
         
         failure {
             echo 'pipeline falhou.'
+        }
+        when {
+            expression { PARAMETER_NAME == 'valor_padrao' }
+        }
+        not {
+            expression { MY_VARIABLE == 'valor_indesejado' }
+        }
+        equals {
+            expression { MY_VARIABLE }
+            value 'valor_padrao'
         }
     }
 }
