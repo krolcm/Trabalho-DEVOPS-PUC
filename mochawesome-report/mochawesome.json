@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-03-27T13:51:27.938Z",
-    "end": "2024-03-27T13:52:05.354Z",
-    "duration": 37416,
+    "start": "2024-03-27T14:03:02.627Z",
+    "end": "2024-03-27T14:03:40.073Z",
+    "duration": 37446,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "69dee6bf-564d-493c-b6c3-eb872068550a",
+      "uuid": "7c05b3fe-cabd-42e9-b441-239e8624a4cf",
       "title": "",
       "fullFile": "cypress\\e2e\\TC-01.cy.js",
       "file": "cypress\\e2e\\TC-01.cy.js",
@@ -29,7 +29,7 @@
           "title": "Deve abrir a página da Amazon, pesquisar por \"Devops\" e acessar o link \"Manual de DevOps\"",
           "fullTitle": "Deve abrir a página da Amazon, pesquisar por \"Devops\" e acessar o link \"Manual de DevOps\"",
           "timedOut": null,
-          "duration": 24036,
+          "duration": 26588,
           "state": "passed",
           "speed": "slow",
           "pass": true,
@@ -38,15 +38,15 @@
           "context": null,
           "code": "cy.visit('https://amazon.com.br/');\ncy.wait(5000);\n// Digitar \"Devops\" na caixa de pesquisa\ncy.get('#twotabsearchtextbox').type('Devops');\n// Clicar no botão de pesquisa\ncy.get('#nav-search-submit-button').click();\ncy.wait(2000); // Tempo de espera (ajuste conforme necessário)\n// Clicar no link \"Manual de DevOps\"\ncy.contains('Manual de DevOps').click();\n// Adicionar livro ao carrinho \ncy.get('#add-to-cart-button').click();\n// Verificar se a mensagem \"Adicionado ao carrinho\" está presente\ncy.get('.a-size-medium-plus').should('contain.text', 'Adicionado ao carrinho');",
           "err": {},
-          "uuid": "fd2b170e-e8ec-4be0-a7ce-a30ad70313d6",
-          "parentUUID": "69dee6bf-564d-493c-b6c3-eb872068550a",
+          "uuid": "c424acf8-19ab-4956-a547-245ac614a292",
+          "parentUUID": "7c05b3fe-cabd-42e9-b441-239e8624a4cf",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [
         {
-          "uuid": "19f56052-7ec6-4d1c-8156-0c0173128297",
+          "uuid": "8ca0b414-8ac2-4997-a576-03470699359c",
           "title": "Acessar a Amazon",
           "fullFile": "",
           "file": "",
@@ -57,7 +57,7 @@
               "title": "Deve abrir a página da Amazon e digitar a pesquisa",
               "fullTitle": "Acessar a Amazon Deve abrir a página da Amazon e digitar a pesquisa",
               "timedOut": null,
-              "duration": 8687,
+              "duration": 7145,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -66,32 +66,32 @@
               "context": null,
               "code": "cy.visit('https://amazon.com.br/');\ncy.get('#twotabsearchtextbox').type('Devops');\ncy.get('#nav-search-submit-button').click();",
               "err": {},
-              "uuid": "256d1365-35c7-4076-a01b-1e78b88ea331",
-              "parentUUID": "19f56052-7ec6-4d1c-8156-0c0173128297",
+              "uuid": "81e6a366-6269-43f4-894e-e5eb0cc11ece",
+              "parentUUID": "8ca0b414-8ac2-4997-a576-03470699359c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "256d1365-35c7-4076-a01b-1e78b88ea331"
+            "81e6a366-6269-43f4-894e-e5eb0cc11ece"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8687,
+          "duration": 7145,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         }
       ],
       "passes": [
-        "fd2b170e-e8ec-4be0-a7ce-a30ad70313d6"
+        "c424acf8-19ab-4956-a547-245ac614a292"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 24036,
+      "duration": 26588,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000
