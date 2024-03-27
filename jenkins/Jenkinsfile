@@ -97,11 +97,6 @@ pipeline {
         always {
         echo 'Executado sempre após a etapa post.'
         }
-        when {
-        expression {
-            // Condição para executar a ação post apenas em determinadas circunstâncias
-            currentBuild.result == 'FAILURE'
-        }
-    }
+        
     }
 }
