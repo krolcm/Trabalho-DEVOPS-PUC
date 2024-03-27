@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-27T13:51:27.938Z",
+    "end": "2024-03-27T13:52:05.354Z",
+    "duration": 37416,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "69dee6bf-564d-493c-b6c3-eb872068550a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TC-01.cy.js",
+      "file": "cypress\\e2e\\TC-01.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Deve abrir a página da Amazon, pesquisar por \"Devops\" e acessar o link \"Manual de DevOps\"",
+          "fullTitle": "Deve abrir a página da Amazon, pesquisar por \"Devops\" e acessar o link \"Manual de DevOps\"",
+          "timedOut": null,
+          "duration": 24036,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://amazon.com.br/');\ncy.wait(5000);\n// Digitar \"Devops\" na caixa de pesquisa\ncy.get('#twotabsearchtextbox').type('Devops');\n// Clicar no botão de pesquisa\ncy.get('#nav-search-submit-button').click();\ncy.wait(2000); // Tempo de espera (ajuste conforme necessário)\n// Clicar no link \"Manual de DevOps\"\ncy.contains('Manual de DevOps').click();\n// Adicionar livro ao carrinho \ncy.get('#add-to-cart-button').click();\n// Verificar se a mensagem \"Adicionado ao carrinho\" está presente\ncy.get('.a-size-medium-plus').should('contain.text', 'Adicionado ao carrinho');",
+          "err": {},
+          "uuid": "fd2b170e-e8ec-4be0-a7ce-a30ad70313d6",
+          "parentUUID": "69dee6bf-564d-493c-b6c3-eb872068550a",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [
+        {
+          "uuid": "19f56052-7ec6-4d1c-8156-0c0173128297",
+          "title": "Acessar a Amazon",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve abrir a página da Amazon e digitar a pesquisa",
+              "fullTitle": "Acessar a Amazon Deve abrir a página da Amazon e digitar a pesquisa",
+              "timedOut": null,
+              "duration": 8687,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://amazon.com.br/');\ncy.get('#twotabsearchtextbox').type('Devops');\ncy.get('#nav-search-submit-button').click();",
+              "err": {},
+              "uuid": "256d1365-35c7-4076-a01b-1e78b88ea331",
+              "parentUUID": "19f56052-7ec6-4d1c-8156-0c0173128297",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "256d1365-35c7-4076-a01b-1e78b88ea331"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8687,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [
+        "fd2b170e-e8ec-4be0-a7ce-a30ad70313d6"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 24036,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "configFile": "cypress.json"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
