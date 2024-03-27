@@ -38,20 +38,22 @@ pipeline {
                 input(message: 'Por favor, confirme se deseja continuar para a etapa paralela')
             }
         }
-        parallel {
-            // Definir etapas paralelas
-            stage('Parallel Stage 1') {
-                steps {
-                    echo 'Executando etapa paralela 1'
+        stage('Parallel Stages') {
+            parallel {
+                stage('Parallel Stage 1') {
+                    steps {
+                        // Passos para a etapa paralela 1
+                        echo 'Executando etapa paralela 1'
+                    }
                 }
-            }
-            stage('Parallel Stage 2') {
-                steps {
-                    echo 'Executando etapa paralela 2'
+                stage('Parallel Stage 2') {
+                    steps {
+                        // Passos para a etapa paralela 2
+                        echo 'Executando etapa paralela 2'
+                    }
                 }
             }
         }
-    }
     
     post {
       success {
