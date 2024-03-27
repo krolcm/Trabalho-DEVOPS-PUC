@@ -6,7 +6,6 @@ module.exports = defineConfig({
     baseUrl: 'https://google.com',
   },
 })
-const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
