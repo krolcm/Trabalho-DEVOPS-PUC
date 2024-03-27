@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
@@ -7,7 +6,6 @@ module.exports = defineConfig({
     baseUrl: 'https://google.com',
   },
 })
-=======
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
@@ -18,4 +16,3 @@ module.exports = defineConfig({
     "projectId": "v17697",
   },
 });
->>>>>>> origin/main
