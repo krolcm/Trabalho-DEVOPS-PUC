@@ -33,9 +33,7 @@ pipeline {
                 bat './node_modules/.bin/cypress run --reporter-options configFile=package.json'
             }
         }
-    }
-
-    parallel {
+        parallel {
             // Definir etapas paralelas
             stage('Parallel Stage 1') {
                 steps {
@@ -48,6 +46,7 @@ pipeline {
                 }
             }
         }
+    }
     
     post {
       success {
