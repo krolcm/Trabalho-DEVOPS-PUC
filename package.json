@@ -6,7 +6,7 @@
   "scripts": {
     "cypress:run": "cypress run",
     "release": "standard-version",
-    "test": "cypress run --reporter mochawesome --reporter-options configFile=cypress.json"
+    "test": "cypress run --reporter mochawesome --reporter-options configFile=package.json"
   },
   "version": "1.3.9",
   "devDependencies": {
@@ -21,7 +21,7 @@
   "reporterOptions": {
     "reporterEnabled": "mochawesome",
     "mochawesomeReporterOptions": {
-      "reportDir": "cypress/mochawesome-report", 
+      "reportDir": "/mochawesome-report", 
       "quiet": true,
       "overwrite": false,
       "html": false,
