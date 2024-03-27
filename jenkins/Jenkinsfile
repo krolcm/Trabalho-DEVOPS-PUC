@@ -91,19 +91,17 @@ pipeline {
         success {
             echo 'pipeline bem-sucedido.'
         }
-        
         failure {
             echo 'pipeline falhou.'
         }
+        always {
+        echo 'Executado sempre após a etapa post.'
+        }
         when {
-            expression { PARAMETER_NAME == 'valor_padrao' }
+        expression {
+            // Condição para executar a ação post apenas em determinadas circunstâncias
+            currentBuild.result == 'FAILURE'
         }
-        not {
-            expression { MY_VARIABLE == 'valor_indesejado' }
-        }
-        equals {
-            expression { MY_VARIABLE }
-            value 'valor_padrao'
-        }
+    }
     }
 }
